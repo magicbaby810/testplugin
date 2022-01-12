@@ -5,6 +5,6 @@ class TestPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        println("hello world! everyone")
+        println("hello world! everyone body")
     }
 }
