@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
 }
 
-//apply plugin: TestFeaturePlugin
+//apply plugin: TestPlugin
 
 
 android {
