@@ -7,6 +7,11 @@ buildscript {
         maven { url 'https://jitpack.io' }
         mavenCentral()
     }
+
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+
     dependencies {
         classpath "com.android.tools.build:gradle:3.6.1"
 
