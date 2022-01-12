@@ -4,8 +4,21 @@ apply plugin: 'maven'
 dependencies {
     implementation gradleApi()
     implementation localGroovy()
+
+    implementation "com.android.tools.build:gradle:3.4.3"
 }
 
 repositories {
     mavenCentral()
+}
+
+group='com.sk.testplugin'
+version='0.0.2'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repos'))
+        }
+    }
 }
